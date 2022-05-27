@@ -60,11 +60,13 @@ public class PlayerAttackAnim : MonoBehaviour
         Enemy[] enemies = FindObjectsOfType<Enemy>();
         foreach (Enemy e in enemies)
         {
-            if (_collider.bounds.Intersects(e.Collider.bounds))
+            if (e != null)
             {
-                print("Collide");
-                e.Die();
-                continue;
+                if (_collider.bounds.Intersects(e.Collider.bounds))
+                {
+                    e.Die();
+                    continue;
+                }
             }
         }
     }
