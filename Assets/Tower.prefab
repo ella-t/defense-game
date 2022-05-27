@@ -101,7 +101,7 @@ MonoBehaviour:
   _turnSpeed: 0
   _fireRate: 3
   _targetRange: 5
-  _projectile: {fileID: 0}
+  _projectile: {fileID: 1613212098474436221, guid: 4cc9741c3b62639459c31599d48943b0, type: 3}
 --- !u!1 &8699582531975208555
 GameObject:
   m_ObjectHideFlags: 0

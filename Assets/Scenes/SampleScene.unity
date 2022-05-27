@@ -481,7 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyObject: {fileID: 6609529325692983570, guid: ca51654edb4a46745a4b3ff905b0f4a8, type: 3}
   _spawnRange: 12
-  _spawnRate: 2.5
+  _spawnRate: 1.2
 --- !u!1 &1760751965
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +494,7 @@ GameObject:
   - component: {fileID: 1760751968}
   - component: {fileID: 1760751967}
   - component: {fileID: 1760751969}
+  - component: {fileID: 1760751970}
   m_Layer: 0
   m_Name: PlayerAttackAnim
   m_TagString: Untagged
@@ -5307,6 +5308,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcec767443150e1458cfdaf3aa4744ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moveSpeed: 2
+--- !u!58 &1760751970
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760751965}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!1 &2095750010
 GameObject:
   m_ObjectHideFlags: 0
@@ -5438,3 +5456,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackTime: 3
   _tower: {fileID: 8699582531272325965, guid: 506bb18b2e3ec3749adeb5d85e98819a, type: 3}
+  _towerCooldown: 5
