@@ -14,6 +14,10 @@ public class Tower : MonoBehaviour
     private float _targetRange;
     [SerializeField]
     private Bullet _projectile;
+    [SerializeField]
+    private float _lifetime;
+    [SerializeField]
+    private RadialTimer _timer;
 
     // Memory
     private Enemy _target;
@@ -22,6 +26,7 @@ public class Tower : MonoBehaviour
     private void Start()
     {
         _timeToNextFire = 0;
+        _timer.maxTime = _lifetime;
     }
 
     private void Update()
@@ -80,6 +85,11 @@ public class Tower : MonoBehaviour
                 _target = null;
             }
         }
+    }
+
+    public void Die()
+    {
+        Destroy(transform.parent.gameObject);
     }
 
 }

@@ -10,7 +10,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField]
     private float _attackTime;
     [SerializeField]
-    private Tower _tower;
+    private GameObject _tower;
     [SerializeField]
     private float _towerCooldown;
 
